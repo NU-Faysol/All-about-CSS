@@ -1,0 +1,46 @@
+/* font property */
+
+.my-style{
+
+    font-size: 50px;
+    font-family: cursive;  
+    font-style: italic;
+    font-weight: 900;
+    color: hotpink;
+}
+
+/* color property */
+
+body{
+    background-color: ##9AE6F2;
+}
+h1{
+    color:lightcoral 
+}
+/*text style*/
+
+.align{
+    text-align: center;
+}
+/*text Decoration*/
+
+.dec{
+    text-decoration: underline;   /* none,overline,linethrough  */
+
+    text-indent: 50px;
+
+}
+.transform{
+    text-transform: capitalize; /* lowercase */
+}
+.shadow{
+    text-shadow: 5px 3px greenyellow;
+}
+/*letter spacing*/
+
+h4{
+    letter-spacing: 3px;
+}
+h5{
+    word-spacing: 5px;
+}

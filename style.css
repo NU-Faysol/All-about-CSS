@@ -1,0 +1,60 @@
+
+
+h1{
+    color: blueviolet;
+}
+h2{
+    text-align: center;
+    color: chartreuse;
+    size: 30px;
+}
+h3{
+    padding: 30px;
+    background-color: cornflowerblue;
+}
+
+/* <!--from here we can learn how to use id/class attribute-->*/
+
+.heading{
+    color: cornflowerblue;
+    text-align: center; 
+}
+#body{
+    color: rgb(59, 50, 52);
+}
+/*from here specific element has been targeted*/
+ 
+
+#section1 h1{
+    color: green;
+}
+
+.style1{
+    font-size: 100px;
+}
+.style2{
+   color: ;
+}
+
+   * {
+    /*This is Universal selector ,by this selector we can select all off things in our webste */
+ }
+        /* Grouping */
+
+b,strong,i,article{
+    color:tomato;
+}
+
+cite{
+    font-size: 30px;
+    color: blue;
+}
+
+/*Desendand selector*/
+    #section3  p{
+        color: green;
+    }
+/*Now Child selector*/
+#section4 > p{
+    color: hotpink;
+}

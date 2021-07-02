@@ -33,16 +33,16 @@ h3{
     font-size: 100px;
 }
 .style2{
-   color: ;
-}
+   color: hotpink;
 
-   * {
-    /*This is Universal selector ,by this selector we can select all off things in our webste */
- }
+}
+   
+    /* [ * {  } ]This is Universal selector ,by this selector we can select all off things in our webste */
+ 
         /* Grouping */
 
-b,strong,i,article{
-    color:tomato;
+b , strong , i , article{
+    color: tomato ;
 }
 
 cite{

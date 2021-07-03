@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style html table using css</title>
+
+    <style>
+
+        table{
+            text-align: center;
+            
+            border: black solid 2px;
+
+            border-collapse: collapse;
+            width: 100%;
+        } 
+        #caption{ 
+                      
+            caption-side: bottom;
+            
+
+        }
+        th,td{
+            border: 2px solid black;
+            padding: 5px;
+            text-align: justify;
+
+            empty-cells: hide;
+            
+        }
+        th{
+            background-color: green;
+            height: 30px;
+            vertical-align:top;
+            text-align: center;
+        
+        }
+        
+        tr:nth-child(even){
+            background-color:gray
+
+        }
+        tr:nth-child(odd){
+            background-color:orange;
+        }
+        tr:hover{
+            background-color: tomato;
+        }
+           
+
+    </style>
+
+</head>
+<body>
+    
+    <table>
+<caption id="caption"> <u>Table-1.1 : Student Details</u> </caption>
+
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>GPA</th>
+                <th>Bio</td>
+                <th>Phone</td>
+            </tr>
+    
+        
+            <tr>
+                <td>101</td>
+                <td>Faysol Amir</td>
+                <td>3.5</td>
+                <td>Lorem ut sadipscing consetetur sea sit at sea, elitr sed.</td>
+                <td>01712329913</td>
+            </tr>
+    
+            <tr>
+                <td>102</td>
+                <td>Faysol Amir</td>
+                <td>3.89</td>
+                <td>Est sed vero gubergren elitr kasd voluptua et lorem, diam erat ut kasd dolor sea.</td>
+                <td>01712329913</td>
+            </tr>
+    
+            <tr>
+                <td>103</td>
+                <td>Nizam</td>
+                <td>4</td>
+                <td>Lorem ut amet clita tempor ea rebum. Sit at et sea aliquyam no dolores lorem. Diam et dolores sit ut.</td>
+                <td>01712329913</td>
+            </tr>
+    
+            <tr>
+                <td>104</td>
+                <td>l Amir</td>
+                <td>4.5</td>
+                <td>Tempor diam takimata sanctus aliquyam no no amet sit et rebum, ipsum at justo erat clita amet sadipscing gubergren, justo takimata duo lorem voluptua justo.</td>
+                <td>01712329913</td>
+            </tr>
+    
+            <tr>
+                <td>105</td>
+                <td>Showrav</td>
+                <td>3.5</td>
+                <td>Et voluptua tempor ipsum no labore invidunt, lorem et nonumy est accusam. Sit ea sit dolore sadipscing labore sanctus. No.</td>
+                <td>01712329913</td>
+            </tr>
+    
+    
+        
+    </table>
+
+   
+
+</body>
+</html>

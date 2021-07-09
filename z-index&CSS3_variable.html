@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index and css3 variables</title>
+
+    <style>
+
+        :root{
+            --primary-color: purple;
+            --secoundary-color: orchid;
+        }
+        div{
+            height: 250px;
+            width: 250px;
+        }
+
+        .div1{
+            background-color: purple; /*used for browse comfortable like: if internet explorer don't support the variable that's why as alternative i used this. hmm but code a kunu pronlem hobe na code perfectly kaj korbe */
+            background: var(--primary-color , purple);
+            height: 150px;
+            width: 200px;
+            position: absolute;
+            z-index: 1;
+            top: 50px;
+            left: 60px;
+        }
+        .div2{
+            background-color: orchid;
+
+            height: 150px;
+            width: 200px;
+            position: absolute;
+            background: var(--secoundary-color );  /* Global variable declearation and "orchid" is fallback color . incase if we mistake in variable then automatically color will be red */
+            z-index: 0;
+        }
+        @media screen and (max-width: 600px) {
+            
+            :root {
+            --primary-color: rgb(27, 11, 11);
+            --secoundary-color: rgb(109, 126, 109);
+        }
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="div1"></div>
+<div class="div2"></div>
+    
+</body>
+
+</html>

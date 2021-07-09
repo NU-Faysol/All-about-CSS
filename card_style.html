@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Style Card using CSS</title>
+
+    <style>
+
+        .card-containers{
+
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #c6bc7b ;
+            padding: 20px 0px;
+            justify-content: center;
+            align-items: center;
+          
+        }
+        .card{
+            width: 300px;
+            margin: 10px;
+            box-sizing: border-box;
+            border: 2px solid greenyellow;
+            border-radius: 5px;
+            box-shadow: 1px 2px 4px black;
+            padding: 5px;
+            background-color: #4df5cb;
+
+        }
+        .img-style{
+            width: 100%;
+            border-radius: 5px;
+        }
+        .card-title{
+            margin-top: 5px;
+            font-size: 20px;
+            text-align: center;
+            background-color: darkseagreen;
+            border-radius: 5px;
+        }
+        .card-desc{
+            text-align: justify;
+            line-height: 1.3;
+            background-color:darkkhaki;
+            border-radius: 3px;
+            
+        }
+        .card-desc p::first-letter{
+            font-size: 20px;
+            color: #f5df4d ;
+            font-weight: bold; 
+        }
+        .card:hover{
+            box-shadow: 3px 5px 4px black;
+            transform: scale(1.03);
+
+           /* -ms-transform: scale(1.05); /* IE 9 */
+          /*  -webkit-transform: scale(1.05); /* Safari 3-8 */
+         /*   transform: scale(1.05);*/
+
+    </style>
+
+ </head>
+
+
+<body>
+    
+    <div class="card-containers">
+        <div class="card">
+
+            <img class="img-style" src="http://www.studywithanis.com/wp-content/uploads/2019/07/python.jpg" alt="Anisul Islam's Python card">
+    
+    
+            <div class="card-body">
+                <div class="card-title">
+                    Python programming
+                </div>
+        
+                <div class="card-desc">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis optio vero vel. Laudantium, dolor placeat, est expedita ducimus molestiae officiis odio nihil similique iste quas illum voluptate accusamus fuga saepe voluptatum praesentium! Dicta, tempore! Reiciendis blanditiis, nam id tenetur alias voluptatibus voluptates, commodi in atque, consequuntur distinctio! Non, obcaecati porro!</p>
+                </div>
+            </div>
+    
+        </div>
+
+        <!--Secound card-->
+        <div class="card">
+
+            <img class="img-style" src="http://www.studywithanis.com/wp-content/uploads/2018/01/C-programming-Cover-1024x683.jpg" alt="Anisul Islam's c programming card">
+    
+    
+            <div class="card-body">
+                <div class="card-title">
+                    C Programming
+                </div>
+        
+                <div class="card-desc">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis optio vero vel. Laudantium, dolor placeat, est expedita ducimus molestiae officiis odio nihil similique iste quas illum voluptate accusamus fuga saepe voluptatum praesentium! Dicta, tempore! Reiciendis blanditiis, nam id tenetur alias voluptatibus voluptates, commodi in atque, consequuntur distinctio! Non, obcaecati porro!</p>
+                </div>
+            </div>
+    
+        </div>
+        <!--3rd card-->
+        <div class="card">
+
+            <img class="img-style" src="http://www.studywithanis.com/wp-content/uploads/2018/01/AI-cover-1024x683.jpg" alt="Anisul Islam's AI card">
+    
+    
+            <div class="card-body">
+                <div class="card-title">
+                    Artificial Intelligence
+                </div>
+        
+                <div class="card-desc">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis optio vero vel. Laudantium, dolor placeat, est expedita ducimus molestiae officiis odio nihil similique iste quas illum voluptate accusamus fuga saepe voluptatum praesentium! Dicta, tempore! Reiciendis blanditiis, nam id tenetur alias voluptatibus voluptates, commodi in atque, consequuntur distinctio! Non, obcaecati porro!</p>
+                </div>
+            </div>
+    
+        </div>
+        <!--fourth card-->
+        <div class="card">
+
+            <img class="img-style" src="http://www.studywithanis.com/wp-content/uploads/2018/01/Database-cover-1024x683.jpg" alt="Anisul Islam's MySQL Database card">
+    
+    
+            <div class="card-body">
+                <div class="card-title">
+                    MySQL Database
+                </div>
+        
+                <div class="card-desc">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis optio vero vel. Laudantium, dolor placeat, est expedita ducimus molestiae officiis odio nihil similique iste quas illum voluptate accusamus fuga saepe voluptatum praesentium! Dicta, tempore! Reiciendis blanditiis, nam id tenetur alias voluptatibus voluptates, commodi in atque, consequuntur distinctio! Non, obcaecati porro!</p>
+                </div>
+            </div>
+    
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -3,6 +3,13 @@
     padding: 0;
 
 }
+details{
+    margin: 10px;
+    padding: 5px;
+    background-color:blanchedalmond;
+    width: 150px;
+    border-radius: 7px;
+}
 h1{
     text-align: center;
 }

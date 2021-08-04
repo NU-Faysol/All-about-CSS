@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive website: Part-1</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .navbar{
+            background-color: teal;
+            display: flex;
+            justify-content: flex-end;
+            margin-top : 10px;
+            margin-left: 10px;
+            border-radius: 5px;
+
+        }
+        .navbar a{
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+        }
+        .navbar a:hover{
+            background-color: thistle;
+        }
+        @media screen and (max-width: 600px){
+            
+            .navbar {
+
+                flex-direction: column;
+                padding: 10px;
+                
+            }
+            .navbar a{
+                background-color: tomato;
+                margin: 10px 0px;
+                text-align: center;
+                border-radius: 5px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <a href="#"> Home </a>
+        <a href="#"> Contract Me </a>
+        <a href="#"> About </a>
+
+    </div>
+    
+</body>
+
+</html>

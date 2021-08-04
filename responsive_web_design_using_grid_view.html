@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive web design using grid view </title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: tomato;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        
+        .nav-menu{
+            background-color: steelblue;
+            padding: 1% 5%;
+        }
+        .nav-menu a{
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+            font-size: 1.2rem;
+            display: block;
+
+        }
+        .main{
+            padding: 1% 5%;
+            background-color: springgreen;
+        }
+        .aside{
+            padding: 1% 5%;
+            background-color: slateblue;
+            text-align: center;
+
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        /* for desktop */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+        [class*="col-"]{
+
+            float: left;
+            padding: 10px;
+        }
+        .row::after{
+            content: '';
+            clear: both;
+            display: table;
+}
+
+    /* for phone */
+
+    @media screen and (max-width: 768px) {
+        
+        [class*="col-"]{
+            width: 100%;
+        }
+        .nav-menu a{
+            text-align: center;
+            background-color:yellowgreen;
+            margin: 10px;
+        }
+
+    }
+         /* for tablet */
+    @media screen and (max-width:600px) {
+
+        .col-s-1 {width: 8.33%;}
+        .col-s-2 {width: 16.66%;}
+        .col-s-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-s-5 {width: 41.66%;}
+        .col-s-6 {width: 50%;}
+        .col-s-7 {width: 58.33%;}
+        .col-s-8 {width: 66.66%;}
+        .col-s-9 {width: 75%;}
+        .col-s-10 {width: 83.33%;}
+        .col-s-11 {width: 91.66%;}
+        .col-s-12 {width: 100%;}
+        
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1> Faysol Amir </h1>
+    </div>
+
+    <div class="row">
+
+        <div class="nav-menu col-s-3 col-2">
+            <a href="#"> Home </a>
+            <a href="#"> Tutorial </a>
+            <a href="#"> Cotract </a>
+        </div>
+        <div class="main col-s-8 col-7">
+            <h1> Iam a Web Designer </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, reiciendis dolores perspiciatis quaerat quas modi.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, laborum dolores voluptas magni laboriosam dicta autem iste rerum, qui sit provident quas possimus architecto aspernatur delectus excepturi minima tempora neque quasi assumenda reprehenderit suscipit similique odio? Dolores est quae nesciunt officiis asperiores expedita, odio corrupti saepe, natus iste, adipisci deleniti.</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus at earum tempora, ab sint praesentium doloribus iure rem ex delectus exercitationem deserunt, reprehenderit dolores, similique consequuntur nobis commodi amet. Amet minima, animi architecto voluptatem vitae itaque nisi fugiat natus, velit officia fugit ducimus dignissimos vero labore repellendus culpa assumenda quaerat facilis possimus voluptates est, eos quo eveniet. Tenetur, nam eos?</p>
+        </div>
+
+        <div class="aside col-s-12 col-3">
+
+            <h2>What I love?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quasi sed adipisci ab consectetur commodi fugiat vel cupiditate voluptatibus suscipit.</p>
+
+            <h2>What I do?</h2>
+            <p>doloremque magni cupiditate exercitationem numquam mollitia quasi illo alias, officia quas ipsam ullam velit accusantium aut nihil!</p>
+
+            <h2> What I don't Do? </h2>
+            <p> Optio, ratione voluptates labore quod deserunt consectetur quis, perferendis tenetur ea quisquam inventore quia est, culpa non officia facere. Numquam iure deleniti neque recusandae nobis omnis esse fugiat dicta error, accusantium doloribus.</p>
+
+        </div>
+
+    </div>
+    <div class="footer">
+        &copy;Faysol 2020. Developed by Faysol Amir
+    </div>
+    
+</body>
+
+</html>

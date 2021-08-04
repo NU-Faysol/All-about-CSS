@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation property</title>
+
+    <style>
+
+        img{
+            height: 200px;
+            max-width: 200px;
+            border: black solid 4px;
+            border-radius: 50%;
+            
+            display: block;
+            margin: 0 auto;
+            margin-top: 100px;
+
+
+            /* animation-name: img-anim;
+            animation-duration: 3s; */
+
+        }
+
+        img:hover{
+            animation-name: img-anim;
+            animation-duration: 3s;
+
+             animation-fill-mode:forwards; /*for stay color stable.when i hover this img after 3s the border color is gone.  */
+        }
+
+        @keyframes img-anim {
+
+            /* from  o use korte parbo 0% er bodole */
+            0% {
+
+             /* max-width: 200px; */
+
+            border-color: red;
+            }
+                50% {
+
+                   /* max-width: 300px; */
+
+                    border-color: royalblue;
+
+                }
+                100%{
+                    border-color: springgreen;
+                }
+       
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+<img src="Faysol.jpg" alt="Faysol Amir's Photo">
+    
+</body>
+
+</html>
